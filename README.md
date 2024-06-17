@@ -88,7 +88,7 @@ To make yourself a copy of C4, use `convert_dataset.py` like so:
 # Note: for BERT we are not doing any concatenation of samples, so we do not use the `--concat_tokens`
 # option here. Instead, samples will simply get padded or truncated to the max sequence length
 # in the dataloader
-python src/convert_dataset.py --dataset c4 --data_subset en --out_root ./my-copy-c4 --splits train_small val
+python src/convert_dataset.py --dataset allenai/c4 --data_subset en --out_root ./my-copy-c4 --splits train_small val
 
 # Download the 'train' split if you really want to train the model (not just profile)
 # This will take 1-to-many hours depending on bandwidth, # CPUs, etc.

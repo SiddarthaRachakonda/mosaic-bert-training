@@ -157,7 +157,7 @@ c4constants.splits['val_small'] = DataSplitConstants(hf_split='validation',
                                                      raw_samples=10000,
                                                      truncated_samples=10000)
 
-CONSTS = {'c4': c4constants, 'the_pile': pileconstants}
+CONSTS = {'allenai/c4': c4constants, 'the_pile': pileconstants}
 
 
 class NoConcatDataset(IterableDataset):
@@ -388,6 +388,7 @@ def main(args: Namespace) -> None:
     Args:
         args (Namespace): Commandline arguments.
     """
+
     try:
         dataset_constants = CONSTS[args.dataset]
     except KeyError:
