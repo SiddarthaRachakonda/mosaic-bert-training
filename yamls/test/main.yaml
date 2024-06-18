@@ -84,3 +84,8 @@ callbacks:
   speed_monitor:
     window_size: 5
   lr_monitor: {}
+
+# loggers:
+wandb:
+  project: MosaicBert
+  entity: ai-5-asr-org
