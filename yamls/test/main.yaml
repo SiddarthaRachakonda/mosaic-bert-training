@@ -76,8 +76,8 @@ device_train_microbatch_size: 16
 precision: fp32
 
 # Logging
-progress_bar: false
-log_to_console: true
+progress_bar: true
+log_to_console: false
 console_log_interval: 1ba
 
 callbacks:
@@ -85,7 +85,7 @@ callbacks:
     window_size: 5
   lr_monitor: {}
 
-# loggers:
-wandb:
-  project: MosaicBert
-  entity: ai-5-asr-org
+loggers:
+  wandb:
+    project: MosaicBert
+    entity: ai-5-asr
